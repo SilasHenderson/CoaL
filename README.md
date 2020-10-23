@@ -20,9 +20,9 @@ Learn to code without installing anything
 |   Code    |_______|  	
 |___________|_Info__| 
 
-<b>Samples</b>
+<i>20 html samples </i>
 
-  <i>Document      JavaScript     Canvas        Bonus </i>
+  <b>Document      JavaScript     Canvas        Bonus </b>
   Element       Variable       Program       THREE
   Style         Array          Mouse         Sushi
   Identifier    Object         Animation     Wasm
