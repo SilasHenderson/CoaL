@@ -13,11 +13,11 @@ Learn to code *without installing anything*
 
 *Document*
 
-|`Elements`:   | Make various Html elements                   |
-|`Style`:      | Set Element Style 3 ways                      |
-|`Identifiers` | Make elements with Id's, set color with JavaScript |
-|`Layout`:     | Visualize outer *body* and *html* elements          |
-|`Containers`: | Visualize a divider containing 2 paragraphs         |
+`Elements`..... Make various Html elements <br>
+`Style`........ Set Element Style 3 ways <br>
+`Identifiers`.. Make elements with Id's, set color with JavaScript <br>
+`Layout`....... Visualize outer *body* and *html* elements <br>
+`Containers`... Visualize a divider containing 2 paragraphs <br>
 
 *Bonus*
 
