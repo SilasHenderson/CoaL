@@ -7,7 +7,8 @@
 * click **Run** or press **Shift Enter**
 
 Learn to code without installing anything
-* ~ the science is in, and it's CoaL! ~ *
+
+~ the science is in, and it's CoaL! ~
 
 **Scripts**
 
