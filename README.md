@@ -6,8 +6,18 @@ html editor + 20 html samples
 Learn to code without installing anything. 
 
 *the science is in, and it's CoaL!*
-<pre><code> Write or paste html 
-Click Run or Shift Enter
+<pre><code> <b>User Manual</b>
+
+<i> Quick Start </i>
+&bullet; <b>Open</b> coal.html
+&bullet; <b>Write</b> html
+&bullet; click <b>Run</b>
+
+ coal.html__________
+| Write     |View   |  	
+|  Html     | Result|  	
+|   Code    |_______|  	
+|___________|_Info__| 
 
 <b>Samples</b>
 
