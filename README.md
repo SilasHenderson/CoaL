@@ -11,23 +11,28 @@ Learn to code *without installing anything*
 
 **Scripts**
 
+*Document*
+
 &bullet; `Document_Elements`:    Make various Html elements <br>
 &bullet; `Document_Style`:       Set Element Style 3 ways   <br>
 &bullet; `Document_Identifiers`: Make elements with Id's, set color with JavaScript <br>
 &bullet; `Document_Layout`:      Visualize outer *body* and *html* elements <br>
-&bullet; `Document_Containers`:  Visualize a divider containing 2 paragraphs <br> <br>
+&bullet; `Document_Containers`:  Visualize a divider containing 2 paragraphs <br>
 
 &bullet; `Bonus_Wasm.html`:   Make function with Wasm Bytecode <br>
 &bullet; `Bonus_Three.html`:  Make 3d Cube with THREE.js <br>
 &bullet; `Bonus_Sushi.html`:  Run matrix inversion *speed test* <br>
-&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page <br> <br>
+&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page <br>
+&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page <br>
 
 &bullet; `Bonus_Wasm.html`:   Make function with Wasm Bytecode <br>
 &bullet; `Bonus_Three.html`:  Make 3d Cube with THREE.js <br>
 &bullet; `Bonus_Sushi.html`:  Run matrix inversion *speed test* <br>
-&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page <br> <br>
+&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page <br>
+&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page <br>
 
 &bullet; `Bonus_Wasm.html`:   Make function with Wasm Bytecode <br>
 &bullet; `Bonus_Three.html`:  Make 3d Cube with THREE.js <br>
 &bullet; `Bonus_Sushi.html`:  Run matrix inversion *speed test* <br>
-&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page
+&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page <br>
+&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page <br>
