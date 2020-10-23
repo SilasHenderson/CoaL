@@ -5,17 +5,15 @@ Free html editor + samples
 
 *the science is in, and it's CoaL!*
 
-<pre><code> ~ CoaL ~
-
+<pre><code>
 <b>Instructions</b>
-- Write or paste html code
-- click Run or press Shift Enter
+  Write or paste html code
+  Click Run or press Shift Enter
 
-<b> Samples </b>
-
-<i>Document      JavaScript     Canvas        Bonus </i>
-Element       Variable       Program       THREE
-Style         Array          Mouse         Sushi
-Identifier    Object         Animation     Wasm
-Container     Function       Image         Cloth
-Layout        Loop           WebGL         CoaL </code> </pre>
+<b>Samples</b>
+  <i>Document      JavaScript     Canvas        Bonus </i>
+  Element       Variable       Program       THREE
+  Style         Array          Mouse         Sushi
+  Identifier    Object         Animation     Wasm
+  Container     Function       Image         Cloth
+  Layout        Loop           WebGL         CoaL </code> </pre>
