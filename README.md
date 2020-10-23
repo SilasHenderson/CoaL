@@ -1,10 +1,10 @@
 # CoaL
 
-<b>Co</b>de <b>a</b>nd <b>L</b>earn: <i>Free</i> html editor + 20 scripts
+**Co**de **a**nd **L**earn: **Free** html editor + 20 scripts
 
-Learn to code <u>without installing anything</u>
+Learn to code *without installing anything*
 
 * Write or paste html code
-* click <b>Run</b> or press <b>Shift Enter</b> 
+* click `Run` or press `Shift Enter` 
 
-<i>the science is in, and it's CoaL!</i>
+*the science is in, and it's CoaL!*
