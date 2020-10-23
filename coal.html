@@ -3,12 +3,12 @@
 <!-- - - - - - - - Init Code Mirror - - - - -->
 
 <head>
-	<link href ="lib/codemirror.min.css" rel="stylesheet">
+ 	<link href ="lib/codemirror.min.css" rel="stylesheet">
 	<script src="lib/codemirror.min.js">	</script>
-	<script src="lib/xml.min.js">			</script>
-	<script src="lib/css.min.js">			</script>
+	<script src="lib/xml.min.js">		</script>
+	<script src="lib/css.min.js">		</script>
 	<script src="lib/javascript.min.js">	</script> 
-	<script src="lib/htmlmixed.min.js">		</script>
+	<script src="lib/htmlmixed.min.js">	</script>
 	
 	<style>
 		body {
@@ -28,7 +28,6 @@
 </head>
 
 <body> 
-
 <script>
 
 /* - - - - - - - Document Layout- - - - -- */
@@ -97,18 +96,18 @@ let CanvasMenu     = DropMenu(topnav_div, 'Canvas');
 let BonusMenu 	   = DropMenu(topnav_div, 'Bonus');
 
 for (let pair of [
-    [ 'Elements',       'shorts/Document_Elements.html'], 
-    [ 'Style',          'shorts/Document_Style.html'],
-    [ 'Identifiers',    'shorts/Document_Identifiers.html'], 
-    [ 'Containers',     'shorts/Document_Containers.html'], 
-    [ 'Layout',         'shorts/Document_Layout.html' ] ]) {
+    [ 'Elements',       	'shorts/Document_Elements.html'], 
+    [ 'Style',          	'shorts/Document_Style.html'],
+    [ 'Identifiers',    	'shorts/Document_Identifiers.html'], 
+    [ 'Containers',     	'shorts/Document_Containers.html'], 
+    [ 'Layout',         	'shorts/Document_Layout.html' ] ]) {
 	IntroMenu.add_item(pair[0], 
 		()=>{ LoadScript(editor_mirror, pair[1])});}
 
 for (let pair of [
-	[ 'Variables', 	    'shorts/JavaScript_Variables.html'],
-  	[ 'Arrays', 	    'shorts/JavaScript_Arrays.html'],
- 	[ 'Objects', 	    'shorts/JavaScript_Objects.html'], 
+	[ 'Variables', 	    	'shorts/JavaScript_Variables.html'],
+  	[ 'Arrays', 	    	'shorts/JavaScript_Arrays.html'],
+ 	[ 'Objects', 	    	'shorts/JavaScript_Objects.html'], 
  	[ 'Functions',  	'shorts/JavaScript_Functions.html'], 
  	[ 'Loops',     		'shorts/JavaScript_Loops.html'] ]) {
  	JavascriptMenu.add_item(pair[0],
@@ -123,11 +122,11 @@ for (let pair of [
  	CanvasMenu.add_item(pair[0], ()=>{ LoadScript(editor_mirror, pair[1])});}
  	
 for (let pair of [
-    [ 'Three',  		'shorts/Bonus_Three.html'], 
+    	[ 'Three',  		'shorts/Bonus_Three.html'], 
 	[ 'Cloth',  		'shorts/Bonus_Springs.html'], 
-    [ 'Sushi',          'shorts/Bonus_Sushi.html'], 
-    [ 'Wasm',           'shorts/Bonus_Wasm.html'], 
-    [ 'CoaL',           'code_window.html'],]) {
+    	[ 'Sushi',          	'shorts/Bonus_Sushi.html'], 
+    	[ 'Wasm',           	'shorts/Bonus_Wasm.html'], 
+    	[ 'CoaL',           	'coal.html'],]) {
 	BonusMenu.add_item(pair[0], 
 		()=>{ LoadScript(editor_mirror, pair[1])});}
 
@@ -184,6 +183,7 @@ function setPos(element, x,y,w,h){
 	element.style.height =  h + '%'; }
 	
 function LoadScript(mirror, path, render=true) {
+	
 	let xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = () => {
 		mirror.setValue(xhr.responseText);
@@ -192,6 +192,7 @@ function LoadScript(mirror, path, render=true) {
 	xhr.send(); } 
 
 function Render(mirror, target) {
+	
 	let iframe = document.createElement('iframe');
 		iframe.style.width  = "100%";
 		iframe.style.height = "100%";
@@ -248,7 +249,8 @@ function DropMenu(parent, title) {
 	
 	return menu; }
 
-function Button(parent, title) {	
+function Button(parent, title) {
+	
 	let fontColor = '#cccccc';
 	let backColor = '#000000';
 	let overColor = '#777777';
@@ -271,6 +273,7 @@ function Button(parent, title) {
 	return btn; }
 
 function FixedDiv(left, top, width, height, style=[]) {	
+	
 	let div = document.createElement('div');
 	div.style.position = 'absolute';
 	div.style.left     = left   + '%';
