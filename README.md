@@ -1,8 +1,6 @@
 # CoaL
 
-#### <b>Co</b>de <b>a</b>nd <b>L</b>earn
-
-<i>Free</i> html editor + 20 scripts
+<b>Co</b>de <b>a</b>nd <b>L</b>earn: <i>Free</i> html editor + 20 scripts
 
 Learn to code <u>without installing anything</u>
 
