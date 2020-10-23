@@ -3,7 +3,7 @@
 
 Free html editor + samples
 
-*the science is in, and it's CoaL!*
+~ *the science is in, and it's CoaL!*
 
 <pre><code><b>Instructions</b>
 
