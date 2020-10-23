@@ -8,11 +8,10 @@ html editor + 20 samples
 
 <i>Graphics User Interface</i>
 
-   coal.html_ _ _     
-  | . . . . |    |
-  | Html. . |Doc |
-  | . . . . |_ _ |  	
-  |_._._._._|Info| 
+   coal.html_ _ _
+  | html    |doc |
+  | - . .   |_ _ |  	
+  |_-_._._ _|info| 
   
 <i>Quick Start </i>
 
