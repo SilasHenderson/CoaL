@@ -1,18 +1,18 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
+Learn to code *without installing anything*
+
 **Free** html editor + 20 scripts for learning
 
 * Write or paste html code
 * click **Run** or press **Shift Enter**
 
-Learn to code without installing anything
-
-~ the science is in, and it's CoaL! ~
+*the science is in, and it's CoaL! 
 
 **Scripts**
 
-`Document_Elements`:    Make various Html elements
+`Document_Elements`:    Make various Html elements <br>
 `Document_Style`:       Set Element Style 3 ways
 `Document_Identifiers`: Make elements with Id's, set color with JavaScript
 `Document_Layout`:      Visualize outer *body* and *html* elements
