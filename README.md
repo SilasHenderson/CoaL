@@ -12,8 +12,30 @@ Learn to code without installing anything
 
 <pre style='border:solid 1px;'><code>Topic         Scripts
 -----         -------
-Document      Element  Style    Identifier Container Layout
-JavaScript    Variable Array    Object     Function  Loop
-Canvas        Element  Program  Mouse      Animate   Image
-Bonus         Three    Sushi    Wasm       Promo     CoaL
-</code> </pre>
+Document      
+- Element 
+- Style  
+- Identifier 
+- Container 
+- Layout
+
+JavaScript 
+- Variable
+- Array   
+- Object 
+- Function 
+- Loop
+
+Canvas
+- Element
+- Program 
+- Mouse  
+- Animate 
+- Image
+
+Bonus  
+- Three 
+- Sushi 
+- Wasm  
+- Promo   
+- CoaL </code> </pre>
