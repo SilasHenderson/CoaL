@@ -1,9 +1,10 @@
 <h1><i>W</i>eb <i>As</i>se<i>m</i>bly </h1>
-
-<p> <i>wasm</i> is new language for browser </p> <hr>
-<p> We make instance with 'add' function </p>
+<p> <i>wasm</i> is new language for browser </p> 
+<p> We make <i>instance<i> with 'add' function </p>
+<hr>
 <p id='p' style='color:blue'> instance.exports.add(1,2) = </p>
 <script> 
+  
 let code = Uint8Array.from([ 
   
 //  Header ...............   Version ............
@@ -23,6 +24,5 @@ let code = Uint8Array.from([
 
 let module   = new WebAssembly.Module( code, {});
 let instance = new WebAssembly.Instance( module);
-p.innerHTML += instance.exports.add(1,2);
- 
+p.innerHTML += instance.exports.add(1,2); 
 </script> <style> i{color:#007700;} </style>
