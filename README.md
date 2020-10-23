@@ -11,9 +11,11 @@ Learn to code *without installing anything*
 
 #### Scripts
 
-* `Document_Elements`:    Make various Html elements
-* `Document_Style`:       Set Element Style 3 ways
-* `Document_Identifiers`: Make elements with Id's, set color with JavaScript
+`Document_Elements`:    Make various Html elements
+
+`Document_Style`:       Set Element Style 3 ways
+
+`Document_Identifiers`: Make elements with Id's, set color with JavaScript
 * `Document_Layout`:      Visualize outer *body* and *html* elements
 * `Document_Containers`:  Visualize a divider containing 2 paragraphs
 
