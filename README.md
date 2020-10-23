@@ -1,7 +1,7 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
-Free html editor + samples
+<i>Free</i> html editor + samples
 
 ~ *the science is in, and it's CoaL!*
 
