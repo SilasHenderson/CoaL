@@ -8,7 +8,7 @@
 
 *the science is in, and it's CoaL!*
 
-<pre><code><b>Document        JavaScript        Canvas           Bonus</b>  
+<pre><code>Document       JavaScript       Canvas          Bonus
 -------       --------       -----         -----
 Element       Variable       Program       THREE
 Style         Array          Mouse         Sushi
