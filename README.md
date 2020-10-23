@@ -8,9 +8,7 @@ Learn to code without installing anything
 *the science is in, and it's CoaL!*
 <pre><code><b>User Manual</b>
 
-<i>coal.html</i>
-
-   Run_+_-_A_B_C_     
+   coal.html_ _ _     
   | . . . . |    |
   | Html. . |Doc |
   | . . . . |_ _ |  	
