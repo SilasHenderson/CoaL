@@ -1,7 +1,7 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
-<i>free</i> html editor + 20 scripts for learning
+html editor + 20 html samples
 
 *the science is in, and it's CoaL!*
 
