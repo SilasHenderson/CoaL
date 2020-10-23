@@ -1,7 +1,7 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
-**Free** html editor + 20 scripts
+**Free** html editor + 20 scripts for learning
 
 Learn to code *without installing anything*
 * Write or paste html code
