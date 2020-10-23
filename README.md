@@ -8,6 +8,8 @@ Learn to code without installing anything
 *the science is in, and it's CoaL!*
 <pre><code><b>User Manual</b>
 
+<i>Graphics User Interface</i>
+
    coal.html_ _ _     
   | . . . . |    |
   | Html. . |Doc |
