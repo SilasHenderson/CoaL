@@ -1,6 +1,8 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
+Learn to code <i> without installing anything </i>
+
 html editor + 20 html samples
 
 *the science is in, and it's CoaL!*
