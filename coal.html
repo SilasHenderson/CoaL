@@ -1,0 +1,288 @@
+<!doctype html> <meta charset='utf-8'>
+
+<!-- - - - - - - - Init Code Mirror - - - - -->
+
+<head>
+	<link href ="lib/codemirror.min.css" rel="stylesheet">
+	<script src="lib/codemirror.min.js">	</script>
+	<script src="lib/xml.min.js">			</script>
+	<script src="lib/css.min.js">			</script>
+	<script src="lib/javascript.min.js">	</script> 
+	<script src="lib/htmlmixed.min.js">		</script>
+	
+	<style>
+		body {
+			position:fixed;
+			top:0%; 
+			left:0%;
+			width:100%;
+			height:100%;
+			margin:0px;
+			background-color:#222222; }
+
+		.CodeMirror {
+  			border: none;
+  			height: 100%;
+  			background-color:#fafafa; }
+	</style>
+</head>
+
+<body> 
+
+<script>
+
+/* - - - - - - - Document Layout- - - - -- */
+
+let topnav_div  = FixedDiv(  0, 0,100,  5);
+let editor_div  = FixedDiv(  1, 6, 58, 92);
+let vertical_div= FixedDiv( 58, 6,  2, 92);
+let iframe_div  = FixedDiv( 60, 6, 38, 62);
+let console_div = FixedDiv( 60,70, 38, 28);
+
+iframe_div.style.border = '1px sold #0000ff';
+topnav_div.style.backgroundColor = '#000000';
+topnav_div.style.borderBottom    = 'solid 1px #aaaaaa';
+
+console_div.style.overflowY = 'auto';
+
+vertical_div.style.border = 'none';
+vertical_div.style.backgroundColor = 'rgba(0,0,0,0)';
+
+let layout = { 
+	x:60, 
+	y:50, 
+	x_active:false, 
+	y_active:false}
+
+LayoutLeft(layout.x);
+
+/* ------------------- Text Areas ------------------------ */
+
+let font_size = 16;
+editor_div.style.fontSize = "16px";
+
+let editor_mirror = CodeMirror( editor_div, { 
+    mode:"htmlmixed", lineNumbers:true, viewportMargin:0 } );
+
+LoadScript( editor_mirror, 'shorts/about.html', true);
+
+/* -------------------- Buttons -----------------------------*/
+
+let run_btn  = Button( topnav_div, 'Run'); 
+	run_btn.style.height = '100%';
+	run_btn.style.color  = '#ccccff';
+	run_btn.onclick = (e) => {
+		console_div.innerHTML = '';
+		Render(editor_mirror, iframe_div);}
+
+let plus_btn  = Button( topnav_div, '+');
+	plus_btn.style.height = '100%';
+	plus_btn.style.color  = '#ccccff';
+	plus_btn.onclick = () => { 
+		font_size++; 
+		editor_div.style.fontSize = font_size + 'px'; }
+
+let minus_btn = Button( topnav_div, '-');
+	minus_btn.style.height = '100%';
+	minus_btn.style.color  = '#ccccff';
+	minus_btn.onclick = () => {
+		font_size--;
+		editor_div.style.fontSize = font_size + 'px'; }
+
+/*------------------- Content Drop-menus ---------------------------*/
+
+let IntroMenu      = DropMenu(topnav_div, 'Document');
+let JavascriptMenu = DropMenu(topnav_div, 'JavaScript');
+let CanvasMenu     = DropMenu(topnav_div, 'Canvas'); 
+let BonusMenu 	   = DropMenu(topnav_div, 'Bonus');
+
+for (let pair of [
+    [ 'Elements',       'shorts/Document_Elements.html'], 
+    [ 'Style',          'shorts/Document_Style.html'],
+    [ 'Identifiers',    'shorts/Document_Identifiers.html'], 
+    [ 'Containers',     'shorts/Document_Containers.html'], 
+    [ 'Layout',         'shorts/Document_Layout.html' ] ]) {
+	IntroMenu.add_item(pair[0], 
+		()=>{ LoadScript(editor_mirror, pair[1])});}
+
+for (let pair of [
+	[ 'Variables', 	    'shorts/JavaScript_Variables.html'],
+  	[ 'Arrays', 	    'shorts/JavaScript_Arrays.html'],
+ 	[ 'Objects', 	    'shorts/JavaScript_Objects.html'], 
+ 	[ 'Functions',  	'shorts/JavaScript_Functions.html'], 
+ 	[ 'Loops',     		'shorts/JavaScript_Loops.html'] ]) {
+ 	JavascriptMenu.add_item(pair[0],
+ 		()=>{ LoadScript(editor_mirror, pair[1])});}
+
+for (let pair of [
+	[ 'Element', 		'shorts/Canvas_Element.html'], 
+ 	[ 'Programs',    	'shorts/Canvas_Programs.html'], 
+ 	[ 'Mouse',    		'shorts/Canvas_Mouse.html'], 
+ 	[ 'Animate', 		'shorts/Canvas_Animate.html'], 
+ 	[ 'Image',          'shorts/Canvas_Image.html'] ] ) {
+ 	CanvasMenu.add_item(pair[0], ()=>{ LoadScript(editor_mirror, pair[1])});}
+ 	
+for (let pair of [
+    [ 'Three',  		'shorts/Bonus_Three.html'], 
+	[ 'Cloth',  		'shorts/Bonus_Springs.html'], 
+    [ 'Sushi',          'shorts/Bonus_Sushi.html'], 
+    [ 'Wasm',           'shorts/Bonus_Wasm.html'], 
+    [ 'CoaL',           'code_window.html'],]) {
+	BonusMenu.add_item(pair[0], 
+		()=>{ LoadScript(editor_mirror, pair[1])});}
+
+/*----------------------------- Mouse ------------------------- */
+
+let mouse = {
+	x:0,
+	y:0,
+	down:0 }
+
+document.onmouseup = () => { 
+	vertical_div.style.backgroundColor = 'rgba(0,0,0,0)';
+	layout.x_active = false; 
+	iframe_div.style.pointerEvents = "auto"; }
+
+document.onmousemove = (e) => {
+	mouse.x = 100*e.clientX/document.body.clientWidth;
+	if (layout.x_active) LayoutLeft(mouse.x); }
+
+vertical_div.onmouseover  = () => vertical_div.style.backgroundColor = '#000077';
+vertical_div.onmouseleave = () => vertical_div.style.backgroundColor = 'rgba(0,0,0,0)';
+vertical_div.onmouseup    = () => layout.x_active = false;
+vertical_div.onmousedown  = () => {
+	layout.x_active = true;
+	iframe_div.style.pointerEvents = "none"; }
+
+/*-------------------------- Keyboard ---------------------------*/
+
+let shift_down = 0;
+
+document.onkeydown = (e) => {
+	if (e.key == "Shift") { shift_down = 1; }
+	if (e.key == "Enter" && shift_down == 1){ 
+		e.preventDefault(); 
+		console_div.innerHTML = Date().slice(0, 24) + "<br>";
+		Render(editor_mirror, iframe_div); }}
+
+document.onkeyup = (e) => { if (e.key == "Shift") shift_down = 0;}
+
+document.onerror = (e) => console_div.innerHTML += e + "<br>";
+
+/*--------------------------- Functions --------------------------*/
+
+function LayoutLeft(left) {
+	setPos(vertical_div, left-1, 6,          2, 92);
+	setPos(editor_div,        1, 6,     left-2, 92);
+	setPos(iframe_div,     left, 6, 100-left-2, 72);
+	setPos(console_div,    left,80, 100-left-2, 18); }
+
+function setPos(element, x,y,w,h){
+	element.style.left   =  x + '%';
+	element.style.top    =  y + '%';
+	element.style.width  =  w + '%';
+	element.style.height =  h + '%'; }
+	
+function LoadScript(mirror, path, render=true) {
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = () => {
+		mirror.setValue(xhr.responseText);
+		if (render) Render(editor_mirror, iframe_div ); }
+	xhr.open('GET', path);
+	xhr.send(); } 
+
+function Render(mirror, target) {
+	let iframe = document.createElement('iframe');
+		iframe.style.width  = "100%";
+		iframe.style.height = "100%";
+		iframe.style.border = "none";
+		iframe.srcdoc = mirror.getValue();
+
+	target.innerHTML = "";
+	target.appendChild(iframe); 
+
+	console_div.innerHTML = 
+		"<b> Document Info </b> <br>" + 
+		"<span style='color:#000055'> Updated:" + Date().slice(0, 24) + "</span> <br>";
+
+	iframe.contentWindow.onerror = (msg, url, line) => { 
+		console_div.innerHTML += 
+			`<span style='color:#770000'> ${msg} </span> <br>
+		 	 <span style='color:#005500'> Line: ${line}  <br>`;} }
+
+function DropMenu(parent, title) {
+
+	let menu = {};
+
+	menu.div = document.createElement('div');
+	menu.div.style.display = 'inline-block';
+	menu.div.style.height  = '100%';
+	menu.div.style.verticalAlign = 'top';
+
+	menu.btn = Button(menu.div, title);
+	menu.btn.style.display  = 'block';
+	menu.btn.style.width    = '100%';
+	menu.btn.style.height   = '100%';
+
+	menu.div.onmouseleave = () => {
+		for (let el of menu.div.children) { 
+			if (el != menu.btn) el.style.display = 'none';}}
+
+	menu.btn.onclick = () => {
+		for (let el of menu.div.children) { if (el != menu.btn) {
+			if ( el.style.display == 'none') {
+				 el.style.display  = 'block';
+				 el.style.width    = '100%'; 
+				 el.style.position = 'relative';
+				 el.style.zIndex   = 50;}
+			else el.style.display  = 'none';}}}
+	
+	menu.add_item = (title, func) => {
+		let btn = Button(menu.div, title);
+			btn.style.display = 'none';
+			btn.style.paddingBottom = btn.style.paddingTop = '5px';
+			btn.onclick = func;}
+
+	parent.appendChild(menu.div);
+	menu.div.appendChild(menu.btn);
+	
+	return menu; }
+
+function Button(parent, title) {	
+	let fontColor = '#cccccc';
+	let backColor = '#000000';
+	let overColor = '#777777';
+	let downColor = '#559955';
+
+	let btn = document.createElement('button');
+		btn.innerText     = title;
+		btn.style.outline = 'none';
+		btn.style.border  = 'none';
+		btn.style.paddingLeft     = btn.style.paddingRight = '20px';
+		btn.style.color           = fontColor;
+		btn.style.backgroundColor = backColor
+	
+	btn.onmouseover  = () => { btn.style.backgroundColor = overColor;}
+	btn.onmouseleave = () => { btn.style.backgroundColor = backColor;}
+	btn.onmousedown  = () => { btn.style.backgroundColor = downColor;}
+	btn.onmouseup    = () => { btn.style.backgroundColor = overColor;}
+
+	parent.appendChild(btn);
+	return btn; }
+
+function FixedDiv(left, top, width, height, style=[]) {	
+	let div = document.createElement('div');
+	div.style.position = 'absolute';
+	div.style.left     = left   + '%';
+	div.style.top      = top    + '%';
+	div.style.width    = width  + '%';
+	div.style.height   = height + '%';
+	div.style.backgroundColor = '#ffffff';
+	div.style.border  = 'solid 1px';
+	for (let [key,val] of style) { div.style[key] = val; }
+
+	document.body.appendChild(div);
+	return div; }
+
+</script>
+</body>
