@@ -10,8 +10,8 @@ html editor + 20 samples
 
    coal.html_ _ _
   | html    |doc |
-  | - . .   |_ _ |  	
-  |_-_._._ _|info| 
+  | . . .   |_ _ |  	
+  |_._._._ _|info| 
   
 <i>Quick Start </i>
 
