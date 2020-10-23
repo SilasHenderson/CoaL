@@ -9,7 +9,7 @@ html editor + 20 samples
 <i>Graphics User Interface</i>
 
    coal.html_ _ _
-  | html    |doc |
+  | html    |out |
   | . . .   |_ _ |  	
   |_._._._ _|info| 
   
