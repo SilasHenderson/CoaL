@@ -9,7 +9,15 @@ Learn to code *without installing anything*
 
 *the science is in, and it's CoaL!*
 
-#### Scripts
+*Scripts*
+
+* `cos_color.html`: Dynamically change background Color
+* `varying_test.html`:  Determine color with a 'Varying' Variable
+* `speed_test_mil.html`:  Update 1,000,000 Points animation
+* `gpu_row_reduce.html`: Reduce Matrix with `gpu.js`
+* `uniform_test.html`: Animation with Uniforms
+* `webgl_min.html`: Minimum Setup
+* `color_vertex_min`: Vertex Colors
 
 * `Document_Elements`:    Make various Html elements
 * `Document_Style`:       Set Element Style 3 ways
