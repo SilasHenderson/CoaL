@@ -3,12 +3,13 @@
 
 html editor + 20 html samples
 
-Learn to code without installing anything. 
+Learn to code without installing anything
 
 *the science is in, and it's CoaL!*
 <pre><code> <b>User Manual</b>
 
 <i> Quick Start </i>
+
 &bullet; <b>Open</b> coal.html
 &bullet; <b>Write</b> html
 &bullet; click <b>Run</b>
