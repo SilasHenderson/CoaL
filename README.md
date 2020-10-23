@@ -7,14 +7,13 @@ Free html editor + samples
 
 <pre><code> ~ CoaL ~
 
-<i> Instructions </i>
-
+<b>Instructions</b>
 - Write or paste html code
 - click Run or press Shift Enter
 
-<i> Samples </i>
+<b> Samples </b>
 
-<b>Document      JavaScript     Canvas        Bonus </b>
+<i>Document      JavaScript     Canvas        Bonus </i>
 Element       Variable       Program       THREE
 Style         Array          Mouse         Sushi
 Identifier    Object         Animation     Wasm
