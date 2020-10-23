@@ -3,10 +3,7 @@
 
 html editor + 20 html samples
 
-Learn to code without installing anything
-
-*the science is in, and it's CoaL!*
-
+Learn to code without installing anything. '*The science is in, and it's CoaL!*'
 <pre><code><b>Instructions</b>
 
   Write or paste html 
