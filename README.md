@@ -8,9 +8,9 @@
 
 *the science is in, and it's CoaL!*
 
-<pre><code><b>Document     JavaScript  Canvas       Bonus</b>  
-Element      Variable    Program        THREE
-Style        Array       Mouse          Sushi
-Identifier   Object      Animation      Wasm
-Container    Function    Image          Cloth
-Layout       Loop        ...            CoaL </code> </pre>
+<pre><code><b>Document     JavaScript    Canvas      Bonus</b>  
+Element      Variable     Program       THREE
+Style        Array        Mouse         Sushi
+Identifier   Object       Animation     Wasm
+Container    Function     Image         Cloth
+Layout       Loop         WebGL         CoaL </code> </pre>
