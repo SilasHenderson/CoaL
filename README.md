@@ -1,14 +1,16 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
-**Free** html editor + 20 samples for learning
-
-* Write or paste html code
-* click **Run** or press **Shift Enter**
+*Free* html editor + 20 samples for learning
 
 *the science is in, and it's CoaL!*
 
-<pre><code> ~ Samples ~
+<pre><code> ~ How to run ~
+
+- Write or paste html code
+- click Run or press Shift Enter
+
+~ Sample html scripts ~
 
 <b>Document     JavaScript     Canvas        Bonus </b>
 Element       Variable       Program       THREE
