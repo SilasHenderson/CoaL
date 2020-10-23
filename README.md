@@ -1,7 +1,7 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
-html editor + 20 html samples
+html editor + 20 samples
 
 *the science is in, and it's CoaL!*
 <pre><code><b>User Manual</b>
