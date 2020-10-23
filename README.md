@@ -8,17 +8,17 @@ Learn to code without installing anything
 *the science is in, and it's CoaL!*
 <pre><code> <b>User Manual</b>
 
+   Run_+_-_A_B_C_     
+  | . . . . |    |
+  | Html. . |Doc |
+  | . . . . |_ _ |  	
+  |_._._._._|Info| 
+  
 <i> Quick Start </i>
 
 &bullet; <b>Open</b> coal.html
 &bullet; <b>Write</b> html
 &bullet; click <b>Run</b>
-
- coal.html__________
-| Write     |View   |  	
-|  Html     | Result|  	
-|   Code    |_______|  	
-|___________|_Info__| 
 
 <i>20 html samples </i>
 
