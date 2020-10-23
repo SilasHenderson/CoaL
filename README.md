@@ -6,7 +6,9 @@ html editor + 20 html samples
 Learn to code without installing anything
 
 *the science is in, and it's CoaL!*
-<pre><code> <b>User Manual</b>
+<pre><code><b>User Manual</b>
+
+<i>coal.html</i>
 
    Run_+_-_A_B_C_     
   | . . . . |    |
@@ -14,7 +16,7 @@ Learn to code without installing anything
   | . . . . |_ _ |  	
   |_._._._._|Info| 
   
-<i> Quick Start </i>
+<i>Quick Start </i>
 
 &bullet; <b>Open</b> coal.html
 &bullet; <b>Write</b> html
