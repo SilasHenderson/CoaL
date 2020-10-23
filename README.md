@@ -1,18 +1,16 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
-*Free* html editor + 20 samples for learning
+Free html editor + 20 samples
 
 *the science is in, and it's CoaL!*
 
-<pre><code> ~ How to run ~
-
+<pre><code> <i> Instructions </i>
 - Write or paste html code
 - click Run or press Shift Enter
 
-~ Sample html scripts ~
-
-<b>Document     JavaScript     Canvas        Bonus </b>
+<i>Samples</i>
+<b>Document      JavaScript     Canvas        Bonus </b>
 Element       Variable       Program       THREE
 Style         Array          Mouse         Sushi
 Identifier    Object         Animation     Wasm
