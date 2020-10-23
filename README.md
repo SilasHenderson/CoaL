@@ -8,3 +8,9 @@ Learn to code *without installing anything*
 * click **Run** or press **Shift Enter**
 
 *the science is in, and it's CoaL!*
+
+#### Scripts
+
+* `Bonus_Wasm.html`:   Make an 'add' function with Wasm Bytecode
+* `Bonus_Three.html`:  Make a 3d Cube with THREE.js
+* `Bonus_.html`:
