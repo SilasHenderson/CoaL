@@ -7,8 +7,7 @@ Free html editor + samples
 
 <pre><code><b>Instructions</b>
 
-  Write or paste html code
-  
+  Write or paste html code 
   Click Run or press Shift Enter
 
 <b>Samples</b>
