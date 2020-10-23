@@ -8,28 +8,28 @@
 
 *the science is in, and it's CoaL!*
 
-<pre style='border:solid 1px;'>Document      
+<pre><code><b>Document</b>
 - Element 
 - Style  
 - Identifier 
 - Container 
 - Layout
 
-JavaScript 
+<b>JavaScript</b>
 - Variable
 - Array   
 - Object 
 - Function 
 - Loop
 
-Canvas
+<b>Canvas</b>
 - Element
 - Program 
 - Mouse  
 - Animate 
 - Image
 
-Bonus  
+<b>Bonus</b>
 - Three 
 - Sushi 
 - Wasm  
