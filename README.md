@@ -1,24 +1,22 @@
 # CoaL
 **Co**de **a**nd **L**earn
 
-Learn to code *without installing anything*
-
 **Free** html editor + 20 scripts for learning
 
 * Write or paste html code
 * click **Run** or press **Shift Enter**
 
-*the science is in, and it's CoaL! 
+*the science is in, and it's CoaL! *
 
 **Scripts**
 
-`Document_Elements`:    Make various Html elements <br>
-`Document_Style`:       Set Element Style 3 ways
-`Document_Identifiers`: Make elements with Id's, set color with JavaScript
-`Document_Layout`:      Visualize outer *body* and *html* elements
-`Document_Containers`:  Visualize a divider containing 2 paragraphs
+&bullet; `Document_Elements`:    Make various Html elements <br>
+&bullet; `Document_Style`:       Set Element Style 3 ways   <br>
+&bullet; `Document_Identifiers`: Make elements with Id's, set color with JavaScript <br>
+&bullet; `Document_Layout`:      Visualize outer *body* and *html* elements <br>
+&bullet; `Document_Containers`:  Visualize a divider containing 2 paragraphs <br> <br>
 
-* `Bonus_Wasm.html`:   Make function with Wasm Bytecode
-* `Bonus_Three.html`:  Make 3d Cube with THREE.js
-* `Bonus_Sushi.html`:  Run matrix inversion *speed test*
-* `Bonus_Promo.html`:  *CoaL* Promo Page
+&bullet; `Bonus_Wasm.html`:   Make function with Wasm Bytecode
+&bullet; `Bonus_Three.html`:  Make 3d Cube with THREE.js
+&bullet; `Bonus_Sushi.html`:  Run matrix inversion *speed test*
+&bullet; `Bonus_Promo.html`:  *CoaL* Promo Page
