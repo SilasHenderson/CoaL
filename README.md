@@ -8,10 +8,11 @@
 
 *the science is in, and it's CoaL!*
 
-**Document**: Element, Style, Identifier, Container, Layout
-
-**JavaScript**: Variable, Array, Object, Function, Loop
-
-**Canvas**: Element, Program, 
-
-**Bonus** Three, Sushi, Wasm, Promo, Coal
+<pre> <code>
+Topic         Scripts
+-----         -------
+Document      Element, Style, Identifier, Container, Layout
+JavaScript    Variable, Array, Object, Function, Loop
+Canvas        Element, Program, 
+Bonus         Three, Sushi, Wasm, Promo, Coal
+</code> </pre>
